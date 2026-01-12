@@ -103,7 +103,7 @@ All analytics are implemented in SQL and focus on time-series reasoning and deco
 ### Steps
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/textile-waste-analytics.git
+git clone https://github.com/Matiashonkasalo/textile-waste-analytics.git
 cd textile-waste-analytics
 
 # 2. Run the pipeline
