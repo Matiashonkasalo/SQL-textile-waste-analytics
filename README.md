@@ -7,7 +7,7 @@ The project is implemented using **SQL (DuckDB)** and focuses on building a clea
 
 ---
 
-## 📊 Data Source
+##  Data Source
 
 - **Source:** [Eurostat – Waste Statistics](https://ec.europa.eu/eurostat/databrowser/view/env_wastrt/default/table?lang=en)
 - **Dataset:** Treatment of waste by waste category, hazardousness and waste management operations  
@@ -19,7 +19,7 @@ Only observations related to **textile waste** (NACE Rev. 2 classification) were
 
 ---
 
-## 🧱 Project Structure
+##  Project Structure
 
 ```text
 .
@@ -35,7 +35,7 @@ Only observations related to **textile waste** (NACE Rev. 2 classification) were
 
 ---
 
-## 🔄 Data Pipeline
+##  Data Pipeline
 
 ### 1. Staging (`01_staging.sql`)
 - Load raw CSV data
@@ -53,7 +53,7 @@ Only observations related to **textile waste** (NACE Rev. 2 classification) were
 
 ---
 
-## 📈 Analytics Overview
+##  Analytics Overview
 
 All analytics are implemented in SQL and focus on time-series reasoning and decomposition.
 
@@ -72,7 +72,7 @@ All analytics are implemented in SQL and focus on time-series reasoning and deco
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 ### Treatment Volume Trends
 - **Declining:** UK (-18.7%), Spain (-33.4%), Norway (-70.9%)
@@ -91,11 +91,11 @@ All analytics are implemented in SQL and focus on time-series reasoning and deco
 - Long-term changes typically driven by shifts across **multiple treatment methods**
 - Single treatment types rarely explain entire trend reversals
 
-> ⚠️ **Note:** These observations reflect patterns in the data and do not imply causal relationships.
+>  **Note:** These observations reflect patterns in the data and do not imply causal relationships.
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - [DuckDB](https://duckdb.org/) CLI or Python package
@@ -117,7 +117,7 @@ cat sql/*.sql | duckdb db.duckdb
 
 ---
 
-## ⚠️ Notes and Limitations
+##  Notes and Limitations
 
 - **Reporting practices:** Changes may reflect differences in national reporting standards or classification updates
 - **Data availability:** Time series length varies by country (some start later than 2010)
@@ -129,7 +129,7 @@ This project prioritizes **analytical reasoning** over policy evaluation or reco
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **DuckDB** – Fast analytical SQL database
 - **SQL** – Window functions, CTEs, regression analysis
@@ -137,7 +137,7 @@ This project prioritizes **analytical reasoning** over policy evaluation or reco
 
 ---
 
-## 📚 Treatment Type Codes
+##  Treatment Type Codes
 
 | Code | Description |
 |------|-------------|
@@ -149,14 +149,4 @@ This project prioritizes **analytical reasoning** over policy evaluation or reco
 | DSP_L_OTH | Disposal - Landfill other |
 | DSP_I | Disposal - Incineration |
 
----
 
-## 📄 License
-
-This project uses publicly available Eurostat data. Original data © European Union, [terms of use](https://ec.europa.eu/eurostat/about-us/policies/copyright).
-
----
-
-## 🤝 Contributing
-
-Suggestions and improvements welcome! Please open an issue or submit a pull request.
