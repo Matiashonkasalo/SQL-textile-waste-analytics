@@ -59,16 +59,16 @@ All analytics are implemented in SQL and focus on time-series reasoning and deco
 
 ### Analyses Included
 
-| Analysis | Description | SQL Technique |
-|----------|-------------|---------------|
-| **Yearly totals** | Aggregated volumes per country and year | `GROUP BY` |
-| **Year-over-year change** | Short-term shocks and sudden reductions | Window functions (`LAG`) |
-| **Largest single-year reductions** | Biggest annual decrease per country | Window functions + aggregation |
-| **Long-term change** | First year vs last year comparison | `ROW_NUMBER()`, conditional aggregation |
-| **Relative change (%)** | Normalized growth/decline rates | Percentage calculation |
-| **Volatility analysis** | Stability of treatment volumes | `STDDEV()` |
-| **Trend slope** | Linear trend estimate (tonnes/year) | `REGR_SLOPE()` |
-| **Contribution analysis** | Treatment type decomposition | Multi-level aggregation |
+| Analysis | Description | 
+|----------|-------------|
+| **Yearly totals** | Aggregated volumes per country and year | 
+| **Year-over-year change** | Short-term shocks and sudden reductions | 
+| **Largest single-year reductions** | Biggest annual decrease per country | 
+| **Long-term change** | First year vs last year comparison | 
+| **Relative change (%)** | Normalized growth/decline rates | 
+| **Volatility analysis** | Stability of treatment volumes | 
+| **Trend slope** | Linear trend estimate (tonnes/year) | 
+| **Contribution analysis** | Treatment type decomposition | 
 
 ---
 
